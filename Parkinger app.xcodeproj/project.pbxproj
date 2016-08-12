@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		563B39091D5DBB3300C5CF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B39081D5DBB3300C5CF05 /* AppDelegate.swift */; };
-		563B390B1D5DBB3300C5CF05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B390A1D5DBB3300C5CF05 /* ViewController.swift */; };
 		563B390E1D5DBB3300C5CF05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563B390C1D5DBB3300C5CF05 /* Main.storyboard */; };
 		563B39101D5DBB3300C5CF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563B390F1D5DBB3300C5CF05 /* Assets.xcassets */; };
 		563B39131D5DBB3300C5CF05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563B39111D5DBB3300C5CF05 /* LaunchScreen.storyboard */; };
+		563B391C1D5DBD2E00C5CF05 /* ParkingSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B391B1D5DBD2E00C5CF05 /* ParkingSpace.swift */; };
+		563B391E1D5DBD6300C5CF05 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B391D1D5DBD6300C5CF05 /* UserProfile.swift */; };
+		563B39201D5DC38300C5CF05 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B391F1D5DC38300C5CF05 /* Reservation.swift */; };
+		563B39231D5DE4C900C5CF05 /* SpaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B39221D5DE4C900C5CF05 /* SpaceListViewController.swift */; };
+		563B39251D5DE4DA00C5CF05 /* SpaceItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B39241D5DE4DA00C5CF05 /* SpaceItemViewController.swift */; };
+		563B39271D5DE4E600C5CF05 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B39261D5DE4E600C5CF05 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		563B39051D5DBB3300C5CF05 /* Parkinger app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parkinger app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		563B39081D5DBB3300C5CF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		563B390A1D5DBB3300C5CF05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		563B390D1D5DBB3300C5CF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		563B390F1D5DBB3300C5CF05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563B39121D5DBB3300C5CF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563B39141D5DBB3300C5CF05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		563B391B1D5DBD2E00C5CF05 /* ParkingSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSpace.swift; sourceTree = "<group>"; };
+		563B391D1D5DBD6300C5CF05 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		563B391F1D5DC38300C5CF05 /* Reservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		563B39221D5DE4C900C5CF05 /* SpaceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceListViewController.swift; sourceTree = "<group>"; };
+		563B39241D5DE4DA00C5CF05 /* SpaceItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceItemViewController.swift; sourceTree = "<group>"; };
+		563B39261D5DE4E600C5CF05 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,35 @@
 		563B39071D5DBB3300C5CF05 /* Parkinger app */ = {
 			isa = PBXGroup;
 			children = (
-				563B39081D5DBB3300C5CF05 /* AppDelegate.swift */,
-				563B390A1D5DBB3300C5CF05 /* ViewController.swift */,
+				563B391A1D5DBD1100C5CF05 /* Support Files */,
 				563B390C1D5DBB3300C5CF05 /* Main.storyboard */,
+				563B39211D5DE4A400C5CF05 /* Model */,
+				563B39221D5DE4C900C5CF05 /* SpaceListViewController.swift */,
+				563B39241D5DE4DA00C5CF05 /* SpaceItemViewController.swift */,
+				563B39261D5DE4E600C5CF05 /* LogInViewController.swift */,
+			);
+			path = "Parkinger app";
+			sourceTree = "<group>";
+		};
+		563B391A1D5DBD1100C5CF05 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				563B39081D5DBB3300C5CF05 /* AppDelegate.swift */,
 				563B390F1D5DBB3300C5CF05 /* Assets.xcassets */,
 				563B39111D5DBB3300C5CF05 /* LaunchScreen.storyboard */,
 				563B39141D5DBB3300C5CF05 /* Info.plist */,
 			);
-			path = "Parkinger app";
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		563B39211D5DE4A400C5CF05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				563B391B1D5DBD2E00C5CF05 /* ParkingSpace.swift */,
+				563B391D1D5DBD6300C5CF05 /* UserProfile.swift */,
+				563B391F1D5DC38300C5CF05 /* Reservation.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +127,7 @@
 				TargetAttributes = {
 					563B39041D5DBB3300C5CF05 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5SYAY97HTZ;
 					};
 				};
 			};
@@ -135,7 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				563B390B1D5DBB3300C5CF05 /* ViewController.swift in Sources */,
+				563B391E1D5DBD6300C5CF05 /* UserProfile.swift in Sources */,
+				563B39231D5DE4C900C5CF05 /* SpaceListViewController.swift in Sources */,
+				563B39251D5DE4DA00C5CF05 /* SpaceItemViewController.swift in Sources */,
+				563B39271D5DE4E600C5CF05 /* LogInViewController.swift in Sources */,
+				563B39201D5DC38300C5CF05 /* Reservation.swift in Sources */,
+				563B391C1D5DBD2E00C5CF05 /* ParkingSpace.swift in Sources */,
 				563B39091D5DBB3300C5CF05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Parkinger app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.parginer.Parkinger-app";
@@ -260,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Parkinger app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.parginer.Parkinger-app";
