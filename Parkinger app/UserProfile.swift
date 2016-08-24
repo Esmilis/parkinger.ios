@@ -20,16 +20,11 @@ class UserProfile {
     
     
     static func loadProfile() -> String? {
-        do {
-            let url = NSURL(string: "http://parkinger.net/api/user/login")!
-            let request = NSMutableURLRequest(URL: url)
-            request.HTTPMethod = "GET"
-            request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-            print(request)
-            
-            let task = NSURLSession.sharedSession().dataTaskWithRequest(request){ data,response,error in
-                if let localError = error {
-                    print(localError.localizedDescription)
+        let url = NSURL(string: "http://parkinger.net/api/user/login")!
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url){ data,response,error in
+            if let localError = error {
+                print(localError.localizedDescription)
                     return
                 }
                 do {
@@ -48,9 +43,6 @@ class UserProfile {
             
             
             task.resume()
-        } catch {
-            print("err")
-        }
         
         return nil
     }

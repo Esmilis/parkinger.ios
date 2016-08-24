@@ -17,9 +17,11 @@
 		563B39231D5DE4C900C5CF05 /* SpaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B39221D5DE4C900C5CF05 /* SpaceListViewController.swift */; };
 		563B39251D5DE4DA00C5CF05 /* SpaceItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B39241D5DE4DA00C5CF05 /* SpaceItemViewController.swift */; };
 		563B39271D5DE4E600C5CF05 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B39261D5DE4E600C5CF05 /* LogInViewController.swift */; };
+		762547AF63CB3A6BDCE4594A /* Pods_Parkinger_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0726601D0D75F82E0FB64542 /* Pods_Parkinger_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0726601D0D75F82E0FB64542 /* Pods_Parkinger_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parkinger_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		563B39051D5DBB3300C5CF05 /* Parkinger app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parkinger app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		563B39081D5DBB3300C5CF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563B390D1D5DBB3300C5CF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		563B39221D5DE4C900C5CF05 /* SpaceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceListViewController.swift; sourceTree = "<group>"; };
 		563B39241D5DE4DA00C5CF05 /* SpaceItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceItemViewController.swift; sourceTree = "<group>"; };
 		563B39261D5DE4E600C5CF05 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		DFEF638543D3C1ABA039C166 /* Pods-Parkinger app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkinger app.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parkinger app/Pods-Parkinger app.release.xcconfig"; sourceTree = "<group>"; };
+		F2AD4011A0F5FAE3663C47BC /* Pods-Parkinger app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkinger app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parkinger app/Pods-Parkinger app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762547AF63CB3A6BDCE4594A /* Pods_Parkinger_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222EB0ADD353FD5896233C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0726601D0D75F82E0FB64542 /* Pods_Parkinger_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		563B38FC1D5DBB3300C5CF05 = {
 			isa = PBXGroup;
 			children = (
 				563B39071D5DBB3300C5CF05 /* Parkinger app */,
 				563B39061D5DBB3300C5CF05 /* Products */,
+				BED45E34B1CC3F64879EFA71 /* Pods */,
+				222EB0ADD353FD5896233C8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +110,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		BED45E34B1CC3F64879EFA71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2AD4011A0F5FAE3663C47BC /* Pods-Parkinger app.debug.xcconfig */,
+				DFEF638543D3C1ABA039C166 /* Pods-Parkinger app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 563B39171D5DBB3300C5CF05 /* Build configuration list for PBXNativeTarget "Parkinger app" */;
 			buildPhases = (
+				121CEBA898F26359A2D0F12B /* [CP] Check Pods Manifest.lock */,
 				563B39011D5DBB3300C5CF05 /* Sources */,
 				563B39021D5DBB3300C5CF05 /* Frameworks */,
 				563B39031D5DBB3300C5CF05 /* Resources */,
+				008DAABEF3283582BC52F5E2 /* [CP] Embed Pods Frameworks */,
+				D8DDD64B9A8843D7A3CADF7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +188,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		008DAABEF3283582BC52F5E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parkinger app/Pods-Parkinger app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		121CEBA898F26359A2D0F12B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8DDD64B9A8843D7A3CADF7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parkinger app/Pods-Parkinger app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		563B39011D5DBB3300C5CF05 /* Sources */ = {
@@ -284,6 +359,7 @@
 		};
 		563B39181D5DBB3300C5CF05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2AD4011A0F5FAE3663C47BC /* Pods-Parkinger app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -296,6 +372,7 @@
 		};
 		563B39191D5DBB3300C5CF05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFEF638543D3C1ABA039C166 /* Pods-Parkinger app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -325,6 +402,7 @@
 				563B39191D5DBB3300C5CF05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
